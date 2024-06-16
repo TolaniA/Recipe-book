@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background-color: #28a745; /* Changed to green */
+    padding: 20px;
+    color: white;
+}
+
+header input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li button:hover,
+nav ul li button.active {
+    background-color: #28a745; /* Changed to green */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-card .details {
+    padding: 20px;
+}
+
+.recipe-card .details h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.recipe-card .details p {
+    margin: 10px 0;
+    color: #666;
+}
+
+#add-recipe {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#add-recipe form {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-recipe form input,
+#add-recipe form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-recipe form button {
+    padding: 10px;
+    background-color: #28a745; /* Changed to green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-recipe form button:hover {
+    background-color: #218838; /* Darker green */
+}
